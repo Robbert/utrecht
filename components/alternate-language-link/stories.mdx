@@ -1,0 +1,66 @@
+<!--
+@license EUPL-1.2
+Copyright (c) 2021 Gemeente Utrecht
+Copyright (c) 2021 Robbert Broersma
+-->
+
+import { Meta, Story, Canvas, ArgsTable, Description } from "@storybook/addon-docs/blocks";
+import clsx from "clsx";
+
+import "../link/style.css";
+
+import README from "./README.md";
+
+export const AlternateLanguageLink = ({ textContent, title, current, lang, hreflang }) =>
+  `<a href="https://example.com/${lang}/" class="${clsx("utrecht-link", "utrecht-link--alternate-language", {
+    "utrecht-link--current": current,
+  })}"${current ? 'aria-current="page"' : ""} title="${title}" hreflang="${hreflang}" lang="${lang}"${
+    !current ? 'rel="alternate"' : ""
+  }>${textContent}</a>`;
+
+<Meta
+  title="Components/Alternate Language Link"
+  argTypes={{
+    textContent: {
+      description: "Link text",
+      control: "text",
+    },
+    current: {
+      description: "This language is the current page",
+      control: "boolean",
+    },
+    hreflang: {
+      description: "Language of alternate page",
+      control: "text",
+    },
+    lang: {
+      description: "Language code for the content of the alternate page",
+      control: "text",
+    },
+    title: {
+      description: "Language the description for the alternate page",
+      control: "text",
+    },
+  }}
+  parameters={{
+    docs: {
+      transformSource: (_src, { args }) => AlternateLanguageLink(args),
+    },
+    status: "WORK IN PROGRESS",
+  }}
+/>
+
+<Description>{README}</Description>
+
+Styling via the `.utrecht-link` class name with `.utrecht-link--alternate-language` modifier class name:
+
+<Canvas>
+  <Story
+    name="Alternate Language Link"
+    args={{ textContent: "EN", title: "This page in English", lang: "en", current: true, hreflang: "en" }}
+  >
+    {AlternateLanguageLink.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Alternate Language Link" />
