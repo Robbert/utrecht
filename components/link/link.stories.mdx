@@ -12,13 +12,14 @@ import "./style.css";
 import README from "./README.md";
 import accessibilityGuidelines from "./docs/accessibility-guidelines.md";
 
-export const Template = ({ content, active, focus, hover, visited }) =>
-  `<a href="#" class="${clsx("utrecht-link", {
+export const Template = ({ href, content, active, focus, hover, visited, external }) =>
+  `<a href="${href || "https://example.com/"}" class="${clsx("utrecht-link", {
     "utrecht-link--active": active,
     "utrecht-link--focus": focus,
     "utrecht-link--hover": hover,
     "utrecht-link--visited": visited,
-  })}">${content}</a>`;
+    "utrecht-link--external": external,
+  })}"${external ? ' rel="external noopener noreferrer" target="_blank"' : ""}>${content}</a>`;
 
 <Meta
   title="Components/Link"
@@ -48,6 +49,16 @@ export const Template = ({ content, active, focus, hover, visited }) =>
       control: "boolean",
       defaultValue: false,
     },
+    external: {
+      description: "External",
+      control: "boolean",
+      defaultValue: false,
+    },
+    href: {
+      description: "Target URL",
+      control: "text",
+      defaultValue: "",
+    },
   }}
   parameters={{
     docs: {
@@ -68,6 +79,10 @@ Styling via the `.utrecht-link` class name:
 <Canvas>
   <Story name="Link">{Template.bind({})}</Story>
 </Canvas>
+
+<ArgsTable story="Link" />
+
+## States
 
 Styling via the `.utrecht-link--hover` class name:
 
@@ -101,4 +116,24 @@ Styling via the `.utrecht-link--visited` class name:
   </Story>
 </Canvas>
 
-<ArgsTable story="Link" />
+## External link
+
+TODO:
+
+- `target="_blank"` accessibility?
+- icon should be configurable via CSS variable.
+
+Docs:
+
+- Styling via the `.utrecht-link--external` class name.
+- `rel="external"` is old-school metadata without any particular use.
+- `rel="noopener"` helps security: disable JavaScript contact via `window.opener` between the current page and the page you link to.
+- `rel="noreferer"` helps privacy: normal links leak privacy sensitive data. The 3rd-party website you link to will find out what page you were on via the HTTP `Referer` header. Including `noreferer` disables the `Referer` header.
+
+<Canvas>
+  <Story name="External link" args={{ href: "https://www.whatismyreferer.com", external: true }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="External link" />
