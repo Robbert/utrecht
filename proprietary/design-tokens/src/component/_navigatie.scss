@@ -9,17 +9,20 @@
  */
 :root {
   /** @presenter Sizing */
-  --utrecht-sidenav-item-margin-block-start: 0.5ch;
-  --utrecht-sidenav-item-margin-block-end: 1rem;
-  --utrecht-sidenav-item-margin-block-start: 0.5rem;
-  --utrecht-sidenav-item-margin-block-end: 0.5rem;
+  --utrecht-sidenav-item-margin-block-start: var(--utrecht-space-inline-xs) /*0.5ch*/;
+  --utrecht-sidenav-item-margin-block-end: var(--utrecht-space-inline-md) /*1rem*/;
+  --utrecht-sidenav-item-margin-block-start: var(--utrecht-space-inline-xs) /*0.5ch*/;
+  --utrecht-sidenav-item-margin-block-end: var(--utrecht-space-inline-xs) /*0.5ch*/;
 
   /** @presenter Color */
   --utrecht-sidenav-item-marker-color: var(--utrecht-grey-40);
   --utrecht-sidenav-item-color-hover: var(--utrecht-blue-40);
 
+  --utrecht-sidenav-item-color: var(--utrecht-blue-40);
+  --utrecht-sidenav-item-hover-color: var(--utrecht-blue-40);
+
   --utrecht-topnav-list-background: var(--utrecht-grey-15);
-  --utrecht-topna-link-background--hover: var(--utrecht-black);
+  --utrecht-topnav-link-background--hover: var(--utrecht-black);
   --utrecht-topnav-list-border-color: var(--utrecht-grey-40);
   --utrecht-topnav-link-color: var(--utrecht-white);
 

@@ -25,13 +25,13 @@
 
 .utrecht-topnav__item {
   flex: 1 0 auto;
-  border-right: 1px solid var(--utrecht-topnav-list-border-color);
+  border-inline-end: 1px solid var(--utrecht-topnav-list-border-color);
   text-align: center;
   margin-inline-start: 0;
 }
 
 .utrecht-topnav__item li:first-child {
-  border-left: 1px solid var(--utrecht-topnav-list-border-color);
+  border-inline-start: 1px solid var(--utrecht-topnav-list-border-color);
   padding-inline-start: 0;
 }
 
@@ -45,7 +45,7 @@
 
 .utrecht-topnav__link:hover {
   text-decoration: underline;
-  background-color: var(--utrecht-topna-link-background--hover);
+  background-color: var(--utrecht-topnav-link-background--hover);
   color: var(--utrecht-topnav-link-color);
 }
 
@@ -84,9 +84,14 @@
 .utrecht-sidenav__item {
   margin-block-start: var(--utrecht-space-inline-2xs);
   margin-block-end: 0.75em;
+
   padding-inline-start: var(--utrecht-space-inline-2xs);
-  padding-inline-end: 1ch;
-  border-bottom: 1px solid var(--utrecht-grey-80);
+  padding-inline-end: var(--utrecht-space-inline-2xs);
+
+  padding-block-start: var(--utrecht-space-inline-xs);
+  padding-block-end: var(--utrecht-space-inline-md);
+  border-block-end: 1px solid var(--utrecht-grey-80);
+  border: 1px solid red;
 }
 
 .utrecht-sidenav__subitem {
@@ -94,16 +99,18 @@
   margin-block-end: 0.75em;
 }
 
-.utrecht-sidenav__item a {
+.utrecht-sidenav__item a,
+.utrecht-sidenav__link {
   display: block;
-  color: var(--utrecht-side-nav-item-color, var(--utrecht-link-color, blue));
+  color: var(--utrecht-sidenav-item-color, var(--utrecht-link-color, blue));
   padding-inline-start: var(--utrecht-space-inline-2xs);
+  border: 1px solid green;
 }
 
 .utrecht-sidenav__item a:hover {
-  color: var(--utrecht-side-nav-item-color-hover, var(--utrecht-link-color-hover, red));
+  color: var(--utrecht-sidenav-item-hover-color, var(--utrecht-link-hover-color, red));
 }
 
 .utrecht-sidenav__item a:active {
-  color: var(--utrecht-side-nav-item-color-hover, var(--utrecht-link-color-hover, red));
+  color: var(--utrecht-sidenav-item-hover-color, var(--utrecht-link-hover-color, red));
 }
