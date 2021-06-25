@@ -35,7 +35,7 @@ jobs:
           npm run test --if-present --workspaces
 
       - name: "Continuous Integration: visual regression test"
-        if: github.event.pull_request.user.login != 'dependabot[bot]'
+        if: ${{ github.event.pull_request.user.login != 'dependabot[bot]' || github.event.pull_request.draft == false }}
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
         run: |
