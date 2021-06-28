@@ -1,36 +1,6 @@
-import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
-import { SpacingPresenter } from "storybook-design-token/dist/components/presenter/SpacingPresenter";
 import { Meta } from "@storybook/addon-docs/blocks";
 import designTokens from "@utrecht/design-tokens/dist/index.json";
-
-export const path2css = (path) => `var(--${path.join("-")})`;
-
-export const SpaceTokensTable = ({ tokens }) => (
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Variable</th>
-        <th>Value</th>
-        <th>Preview</th>
-      </tr>
-    </thead>
-    <tbody>
-      {tokens.map(({ comment, name, path, value }) => (
-        <tr key={name}>
-          <td>{comment}</td>
-          <td>
-            <code>{path2css(path)}</code>
-          </td>
-          <td>{value}</td>
-          <td>
-            <SpacingPresenter token={{ value }} />
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-);
+import { SpaceTokensTable } from "./components/SpaceTokensTable";
 
 <Meta title="Utrecht/Space" />
 
