@@ -3,11 +3,11 @@
     "blockquote": {
       "attribution": {
         "color": {},
-        "font-size": { "value": "0.75rem" }
+        "font-size": {}
       },
       "content": {
-        "color": { "value": "{utrecht.color.red.40.value}" },
-        "font-size": { "value": "1.125rem" }
+        "color": {},
+        "font-size": {}
       }
     }
   }

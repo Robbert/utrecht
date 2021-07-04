@@ -6,7 +6,7 @@
         "margin-block-end": { "value": "8px" }
       },
       "marker": {
-        "color": {}
+        "color": { "value": "{amsterdam.color.grey.50.value}" }
       }
     }
   }

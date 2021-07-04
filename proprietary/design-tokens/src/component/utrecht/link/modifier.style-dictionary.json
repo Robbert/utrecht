@@ -2,18 +2,18 @@
   "utrecht": {
     "link": {
       "active": {
-        "color": { "value": "{utrecht.link.color.value}" }
+        "color": {}
       },
       "focus": {
-        "color": { "value": "{utrecht.color.blue.40.value}" },
-        "text-decoration": { "value": "underline" }
+        "color": {},
+        "text-decoration": {}
       },
       "hover": {
-        "color": { "value": "{utrecht.link.focus.color.value}" },
-        "text-decoration": { "value": "underline" }
+        "color": { "value": "{amsterdam.color.red.50.value}" },
+        "text-decoration": {}
       },
       "visited": {
-        "color": { "value": "{utrecht.link.color.value}" }
+        "color": {}
       }
     }
   }

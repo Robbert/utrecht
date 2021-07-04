@@ -2,17 +2,19 @@
   "utrecht": {
     "badge": {
       "background-color": {
-        "value": "{utrecht.color.grey.30.value}"
+        "value": "{amsterdam.color.grey.50.value}"
       },
       "border-radius": {
         "value": "0"
       },
       "color": {
-        "value": "{utrecht.color.white.value}"
+        "value": "{amsterdam.color.white.value}"
       },
-      "font-weight": {},
+      "font-weight": {
+        "value": "{amsterdam.typography.weight-scale.semi-bold.font-weight.value}"
+      },
       "padding-block": {
-        "value": "{utrecht.space.block.xs.value}"
+        "value": "6px"
       },
       "padding-inline": {
         "value": "{utrecht.space.inline.md.value}"

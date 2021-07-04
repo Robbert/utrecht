@@ -1,9 +1,9 @@
 {
   "utrecht": {
     "separator": {
-      "color": { "value": "{utrecht.color.grey.90.value}" },
-      "width": { "value": "8px" },
-      "margin-block": {}
+      "color": { "value": "hsl(0 0% 80%)" },
+      "width": { "value": "1px" },
+      "margin-block": { "value": "1em" }
     }
   }
 }

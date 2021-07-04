@@ -1,10 +1,11 @@
 {
   "utrecht": {
     "form-input": {
-      "block-size": { "value": "42px" },
-      "color": { "value": "{utrecht.color.black.value}" },
-      "border-color": { "value": "{utrecht.color.grey.30.value}" },
-      "font-family": { "value": "{utrecht.typography.sans-serif.font-family.value}" }
+      "block-size": { "value": "44px" },
+      "color": { "value": "{amsterdam.color.black.value}" },
+      "border-color": { "value": "{amsterdam.color.grey.50.value}" },
+      "font-family": { "value": "{amsterdam.typography.sans-serif.font-family.value}" },
+      "line-height": { "value": "18px" }
     }
   }
 }

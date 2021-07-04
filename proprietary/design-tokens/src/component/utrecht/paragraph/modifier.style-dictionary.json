@@ -2,8 +2,8 @@
   "utrecht": {
     "paragraph": {
       "lead": {
-        "font-size": { "value": "{utrecht.typography.scale.lg.font-size.value}" },
-        "font-weight": {},
+        "font-size": {},
+        "font-weight": { "value": "{amsterdam.typography.weight-scale.semi-bold.font-weight.value}" },
         "line-height": {}
       }
     }
