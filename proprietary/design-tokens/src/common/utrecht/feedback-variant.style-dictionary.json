@@ -4,7 +4,7 @@
       "danger": {
         "fill": {
           "background-color": { "value": "{utrecht.feedback.danger.background-color.value}" },
-          "color": { "value": "{amsterdam.color.red.50.value}" }
+          "color": { "value": "{amsterdam.color.white.value}" }
         }
       },
       "warning": {
@@ -16,7 +16,7 @@
       "safe": {
         "fill": {
           "background-color": { "value": "{utrecht.feedback.safe.background-color.value}" },
-          "color": { "value": "{amsterdam.color.green.30.value}" }
+          "color": { "value": "{amsterdam.color.white.value}" }
         }
       },
       "info": {

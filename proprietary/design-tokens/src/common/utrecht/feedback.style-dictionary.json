@@ -4,7 +4,7 @@
       "danger": {
         "background-color": { "value": "{utrecht.feedback.danger.color.value}" },
         "border-color": { "value": "{utrecht.feedback.danger.color.value}" },
-        "color": { "value": "{utrecht.color.red.40.value}" }
+        "color": { "value": "{amsterdam.color.red.50.value}" }
       },
       "warning": {
         "background-color": { "value": "{utrecht.feedback.warning.color.value}" },
@@ -14,7 +14,7 @@
       "safe": {
         "background-color": { "value": "{utrecht.feedback.safe.color.value}" },
         "border-color": { "value": "{utrecht.feedback.safe.color.value}" },
-        "color": { "value": "{utrecht.color.green.50.value}" }
+        "color": { "value": "{amsterdam.color.green.30.value}" }
       },
       "neutral": {
         "background-color": { "value": "{amsterdam.color.grey.20.value}" },
