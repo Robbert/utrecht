@@ -10,7 +10,7 @@
       "warning": {
         "fill": {
           "background-color": { "value": "{utrecht.feedback.warning.background-color.value}" },
-          "color": { "value": "{utrecht.color.black.value}" }
+          "color": { "value": "{amsterdam.color.black.value}" }
         }
       },
       "safe": {
@@ -21,44 +21,44 @@
       },
       "info": {
         "fill": {
-          "background-color": { "value": "{amsterdam.color.blue.40.color.value}" },
-          "color": { "value": "{amsterdam.color.white.color.value}" }
+          "background-color": { "value": "{amsterdam.color.blue.30.value}" },
+          "color": { "value": "{amsterdam.color.white.value}" }
         }
       },
       "invalid": {
         "fill": {
           "background-color": { "value": "{utrecht.feedback.invalid.background-color.value}" },
-          "color": { "value": "{utrecht.color.white.value}" }
+          "color": { "value": "{amsterdam.color.white.value}" }
         }
       },
       "valid": {
         "fill": {
           "background-color": { "value": "{utrecht.feedback.valid.background-color.value}" },
-          "color": { "value": "{utrecht.color.white.value}" }
+          "color": { "value": "{amsterdam.color.white.value}" }
         }
       },
       "error": {
         "fill": {
           "background-color": { "value": "{utrecht.feedback.error.background-color.value}" },
-          "color": { "value": "{utrecht.color.white.value}" }
+          "color": { "value": "{amsterdam.color.white.value}" }
         }
       },
       "success": {
         "fill": {
           "background-color": { "value": "{utrecht.feedback.success.background-color.value}" },
-          "color": { "value": "{utrecht.color.white.value}" }
+          "color": { "value": "{amsterdam.color.white.value}" }
         }
       },
       "inactive": {
         "fill": {
           "background-color": { "value": "{utrecht.feedback.inactive.background-color.value}" },
-          "color": { "value": "{utrecht.color.white.value}" }
+          "color": { "value": "{amsterdam.color.white.value}" }
         }
       },
       "active": {
         "fill": {
           "background-color": { "value": "{utrecht.feedback.active.background-color.value}" },
-          "color": { "value": "{utrecht.color.white.value}" }
+          "color": { "value": "{amsterdam.color.white.value}" }
         }
       }
     }

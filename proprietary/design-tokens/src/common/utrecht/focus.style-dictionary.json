@@ -2,8 +2,8 @@
   "utrecht": {
     "focus": {
       "background-color": { "value": "{utrecht.color.yellow.60.value}" },
-      "border-color": { "value": "{utrecht.color.black.value}" },
-      "color": { "value": "{utrecht.color.black.value}" },
+      "border-color": { "value": "{amsterdam.color.black.value}" },
+      "color": { "value": "{amsterdam.color.black.value}" },
       "outline-color": { "value": "{amsterdam.color.amber.50.value}" }
     }
   }

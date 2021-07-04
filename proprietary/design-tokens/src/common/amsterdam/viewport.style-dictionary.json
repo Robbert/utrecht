@@ -1,6 +1,6 @@
 {
   "amsterdam": {
-    "viewport-scale": {
+    "viewport": {
       "3xs": {
         "width": {
           "comment": "mobileS",

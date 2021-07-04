@@ -17,8 +17,8 @@
         "color": { "value": "{utrecht.color.green.50.value}" }
       },
       "neutral": {
-        "background-color": { "value": "{amsterdam.color.grey.2.color.value}" },
-        "color": { "value": "{amsterdam.color.black.color.value}" }
+        "background-color": { "value": "{amsterdam.color.grey.20.value}" },
+        "color": { "value": "{amsterdam.color.black.value}" }
       },
       "invalid": {
         "background-color": { "value": "{utrecht.feedback.danger.background-color.value}" },
