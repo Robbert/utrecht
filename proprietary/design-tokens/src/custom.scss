@@ -1,1 +1,23 @@
 @import "./responsive";
+@import "./fonts";
+
+.utrecht-button {
+  min-inline-size: 90px;
+}
+
+.utrecht-textbox {
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.utrecht-blockquote {
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  font-style: italic;
+}
+
+:root {
+  --utrecht-unordered-list-marker-content: "■";
+}
