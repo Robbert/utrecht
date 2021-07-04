@@ -1,0 +1,71 @@
+<!--
+@license EUPL-1.2
+Copyright (c) 2021 Robbert Broersma
+-->
+
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+
+import "./bem.scss";
+
+import README from "./README.md";
+
+export const Template = ({ html }) => `<article class="utrecht-article">${html}</article>`;
+
+<Meta
+  title="Components/Article"
+  argTypes={{
+    html: {
+      description: "HTML content",
+      control: "text",
+    },
+  }}
+  parameters={{
+    docs: {
+      transformSource: (_src, { args }) => Template(args),
+    },
+    status: {
+      type: "WORK IN PROGRESS",
+    },
+    notes: {
+      UX: README,
+    },
+  }}
+/>
+
+# Article
+
+Styling via the `.utrecht-article` class name:
+
+<Canvas>
+  <Story
+    name="Article"
+    args={{
+      html: `<h1>Excuses voor Amsterdams slavernijverleden</h1>
+<p class="utrecht-paragraph utrecht-paragraph--lead">Burgemeester Femke Halsema heeft namens het stadsbestuur excuses aangeboden voor de betrokkenheid van het toenmalige stadsbestuur bij de wereldwijde slavenhandel en slavernij. Ze deed dat tijdens de jaarlijkse nationale herdenking van het trans-Atlantische slavernijverleden in het Oosterpark (Keti Koti).</p>
+<p>Het huidige stadsbestuur is verantwoordelijk voor de daden van zijn voorgangers. Het past daarom om excuses te maken. Ook voelt dit bestuur zich verantwoordelijk om een gebaar naar de nazaten te maken, het leed te erkennen en samen aan herstel te werken. Excuses dragen bij aan een goede toekomst waarin alle Amsterdammers – ongeacht afkomst of kleur – in gelijkwaardigheid en vrijheid kunnen samenleven.</p>
+<h3 id="h39582a0b-4255-42c4-bb8d-bd2ac8246c26">Erkenning van pijn</h3>
+<p>Nazaten van tot slaaf gemaakte mensen vragen al langer om erkenning van hun pijn en om herstel. Slavernij heeft families en gemeenschappen uit elkaar gerukt en levens verwoest. Bovendien zijn in die tijd racistische ideeën gecreëerd om de slavernij te rechtvaardigen. Die denkbeelden werken nog steeds door in de levens van Amsterdammers.</p>
+<h3 id="hc886515e-c974-49ce-ae5e-821c5902af60">Actieve rol</h3>
+<p>Amsterdamse stadsbestuurders speelden een grote en actieve rol in de slavernij en slavenhandel. Bijna 300 jaar profiteerden zij persoonlijk en verrijkten zij zichzelf. Ze faciliteerden de slavenhandel en hielden de slavernij in stand, wereldwijd. Van toenmalig Nederlands-Indië tot in Zuid-Afrika, Suriname en Nieuw-Amsterdam (het huidige New York), net zo wereldwijd als de handelsnetwerken die de stad beroemd maakten.</p>
+<h3 id="h0046f111-579e-482c-adf8-06172fa6fe00">Elite profiteerde</h3>
+<p>In die tijd bekleedde een aantal rijke families alle machtige posities in de stad: als stadsbestuurders en bestuurders van handelsorganisaties als de West-Indische Compagnie en de Vereenigde Oost-Indische Compagnie. Het gratis werk van slaven in de koloniën leverde veel producten op, zoals specerijen, waarmee plantage-eigenaren en Amsterdamse handelaren erg rijk werden. Vooral de elite profiteerde. Andere Amsterdammers hadden er ook profijt van, er kwamen banen rond producten die in slavernij gemaakt werden. De stad werd groot en welvarend. Toch waren er veel Amsterdammers die niet profiteerden en een armoedig, moeizaam bestaan hadden.</p>
+<h3 id="h0c5a8f67-6334-4f7b-99ad-fdeb807cc688">Onderzoek</h3>
+<p>De gemeenteraad vroeg in 2019 om een onderzoek naar de precieze rol van het stadsbestuur in het slavernijverleden. En om zo nodig, afhankelijk van de uitkomst van het onderzoek, excuses aan te bieden. Meer dan 40 wetenschappers werkten samen met het Internationaal Instituut voor Sociale Geschiedenis aan een groot onderzoek. In september 2020 boden zij het boek ‘Slavernij in Oost en West, het Amsterdam onderzoek’ aan de burgemeester aan.</p>
+<h3 id="h685d7553-5bc1-4215-9613-01bdd1f92ad5">Gratis boekje</h3>
+<p>U kunt een gratis publieksversie ‘Amsterdam en het slavernijverleden’ ophalen of <a href="https://assets.amsterdam.nl/publish/pages/972094/02218_publieksuitgave_slavernijonderzoek_web.pdf" class="externLink ga-tracked tracked-async">online lezen</a>. Vanaf 1 juli is er een tweede druk beschikbaar. U kunt het boekje ophalen bij elke bibliotheek in de stad.</p>
+<p><img data-sources="[{&quot;width&quot;:80,&quot;height&quot;:61,&quot;src&quot;:&quot;/publish/pages/974901/80px/boekcovers_2.jpg&quot;,&quot;sizeClass&quot;:&quot;size_80px&quot;},{&quot;width&quot;:220,&quot;height&quot;:168,&quot;src&quot;:&quot;/publish/pages/974901/220px/boekcovers_2.jpg&quot;,&quot;sizeClass&quot;:&quot;size_220px&quot;},{&quot;width&quot;:642,&quot;height&quot;:490,&quot;src&quot;:&quot;/publish/pages/974901/boekcovers_2.png&quot;}]" data-id="974901" alt="" id="img_pagvld_21728682_0" class="img_pagvld_21728682_0 has-substantial-size" width="321" height="245" src="/publish/pages/974901/boekcovers_2.png" style="max-width: 620px; max-height: 473.209px;"></p>
+<h3 id="he010ee87-87ec-42a2-b5e2-ab69370fea00">Toekomst</h3>
+<p>Er komt een volgend onderzoek, dat gaat over de zogeheten doorwerking. Verder komen er gesprekken in de stad, over het koloniale- en slavernijverleden, over migratie, over uitsluiting en achterstelling. Door te luisteren, krijgen we meer begrip voor elkaar en werken we aan een gezamenlijke toekomst. Ook komt er een nationaal museum over het slavernijverleden in Amsterdam.</p>
+<p>In Amsterdam moet iedereen gelijke kansen hebben. We pakken discriminatie aan in onder meer het uitgaansleven, op de arbeidsmarkt en op de woningmarkt. Een publiekscampagne bestrijdt anti-zwart racisme en andere discriminatie. Ook werken we samen met allerlei organisaties in de stad om discriminatie en ongelijkheid te verminderen.</p>
+<h3 id="hed343eff-0391-45b6-8f9f-a7110136204c">Het verleden leeft</h3>
+<p>Er zijn veel activiteiten over ons slavernijverleden en de doorwerking daarvan in onze stad. Meer weten? Ga naar <a href="https://www.amsterdam.nl/slavernijverleden" class="externLink ga-tracked">amsterdam.nl/slavernijverleden</a>.</p>
+<ul>
+<li><a class="siteLink ptartikel ga-tracked" href="https://www.amsterdam.nl/bestuur-organisatie/college/burgemeester/speeches/toespraak-slavernijherdenking-2021/">Lees de speech van de burgemeester</a>
+</li></ul>`,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Article" />
