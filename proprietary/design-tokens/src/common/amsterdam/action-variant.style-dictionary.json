@@ -1,0 +1,16 @@
+{
+  "amsterdam": {
+    "action": {
+      "primary": {
+        "dark": {
+          "color": { "value": "00387a" }
+        }
+      },
+      "secondary": {
+        "dark": {
+          "color": { "value": "bc0000" }
+        }
+      }
+    }
+  }
+}
