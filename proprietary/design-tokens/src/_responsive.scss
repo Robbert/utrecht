@@ -6,16 +6,15 @@
 
 /* stylelint-disable no-duplicate-selectors */
 
-@media (min-width: 35em) {
+@media (min-width: var(--md)) {
   :root {
-    --utrecht-heading-1-font-size: 28px; /* 28px on tablet min-width-35e */
-    --utrecht-paragraph-lead-font-size: 1.25em; /* 20px on tablet min-width-35e */
+    --utrecht-heading-1-font-size: var(--duo-typography-scale-xxl-font-size);
+    --utrecht-heading-2-font-size: var(--duo-typography-scale-xl-font-size);
   }
 }
 
-@media (min-width: 60em) {
+@media (min-width: var(--xl)) {
   :root {
-    --utrecht-heading-1-font-size: 32px; /* 32px on desktop min-width-60em */
-    --utrecht-paragraph-lead-font-size: 1.25em; /* 20px on desktop min-width-60em */
+    --utrecht-heading-1-font-size: var(--duo-typography-scale-xxxl-font-size);
   }
 }

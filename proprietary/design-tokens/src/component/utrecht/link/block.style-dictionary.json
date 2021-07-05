@@ -1,7 +1,7 @@
 {
   "utrecht": {
     "link": {
-      "color": { "value": "{utrecht.color.blue.30.value}" },
+      "color": { "value": "{duo.color.link-blue.value}" },
       "text-decoration": { "value": "none" }
     }
   }

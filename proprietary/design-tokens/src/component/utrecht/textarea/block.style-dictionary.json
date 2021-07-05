@@ -9,6 +9,7 @@
       "font-family": { "value": "{utrecht.textbox.font-family.value}" },
       "font-size": { "value": "{utrecht.textbox.font-size.value}" },
       "max-width": { "value": "{utrecht.textbox.max-width.value}" },
+      "min-block-size": { "value": "calc(2 * {utrecht.form-input.block-size.value})" },
       "padding-block-end": { "value": "{utrecht.textbox.padding-block-end.value}" },
       "padding-block-start": { "value": "{utrecht.textbox.padding-block-start.value}" },
       "padding-inline-end": { "value": "{utrecht.textbox.padding-inline-end.value}" },

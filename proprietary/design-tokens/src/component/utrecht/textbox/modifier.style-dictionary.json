@@ -2,8 +2,10 @@
   "utrecht": {
     "textbox": {
       "disabled": {
+        "background-color": { "value": "#f0f0f0", "comment": "FIXME: NEW" },
         "border-color": {},
-        "color": {}
+        "color": { "value": "{duo.color.neutral.45.value}" },
+        "font-weight": { "value": "400", "comment": "FIXME: NEW" }
       },
       "invalid": {
         "border-color": { "value": "{utrecht.feedback.invalid.border-color.value}" },

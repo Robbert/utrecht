@@ -1,18 +1,24 @@
 {
   "utrecht": {
     "textbox": {
-      "border-bottom-width": { "value": "3px" },
-      "border-color": { "value": "{utrecht.form-input.border-color.value}" },
+      "background-color": { "value": "{duo.color.white.value}", "comment": "FIXME: NEW" },
+      "border-bottom-width": { "value": "{utrecht.textbox.border-width.value}" },
+      "border-color": { "value": "{duo.color.neutral.65.value}" },
       "border-radius": { "value": "0" },
-      "border-width": { "value": "{utrecht.border-width.sm.value}" },
-      "color": { "value": "{utrecht.form-input.color.value}" },
+      "border-width": { "value": "1px" },
+      "color": { "value": "{duo.color.neutral.95.value}" },
+      "font-weight": { "value": "700", "comment": "FIXME: NEW" },
       "font-family": { "value": "{utrecht.document.font-family.value}" },
-      "font-size": { "value": "{utrecht.typography.scale.md.font-size.value}" },
-      "max-width": { "value": "28em" },
-      "padding-block-end": { "value": "8px" },
-      "padding-block-start": { "value": "8px" },
-      "padding-inline-end": { "value": "12px" },
-      "padding-inline-start": { "value": "12px" }
+      "font-size": { "value": "{duo.typography.scale.xs.font-size.value}" },
+      "max-width": { "value": "27rem" },
+      "blocks-size": {
+        "value": "calc({utrecht.form-input.block-size.value} - 2px)",
+        "comment": "FIXME: NEW /  (48px - 2 * 1px border = 4.6rem) / Use height instead of lineheight for non-webkit compatibility"
+      },
+      "padding-block-end": { "value": "0" },
+      "padding-block-start": { "value": "0" },
+      "padding-inline-end": { "value": "1rem" },
+      "padding-inline-start": { "value": "1rem" }
     }
   }
 }
